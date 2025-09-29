@@ -11,30 +11,30 @@ $linkedin = "https://linkedin.com/in/reikdevries";
 $skills = [
     "Frontend" => ["HTML5", "CSS3", "JavaScript", "React", "Vue.js", "Tailwind CSS"],
     "Backend" => ["PHP", "Node.js", "Python", "MySQL", "PostgreSQL", "MongoDB"],
-    "Tools" => ["Git", "Docker", "VS Code", "Figma", "Photoshop", "Linux"]
+    "Tools" => ["Git", "Docker", "VS Code", "Photoshop"]
 ];
 
 // Projects data
 $projects = [
     [
-        "title" => "E-commerce Platform",
-        "description" => "Een complete webshop gebouwd met PHP en MySQL. Inclusief gebruikersbeheer, winkelwagen functionaliteit en betalingsintegratie.",
-        "technologies" => ["PHP", "MySQL", "JavaScript", "CSS3"],
-        "github" => "https://github.com/reikdevries/ecommerce",
-        "demo" => "https://demo.reikdevries.nl/shop",
+        "title" => "Pokemon",
+        "description" => "",
+        "technologies" => ["JavaScript", "CSS"],
+        "github" => "https://github.com/reikdevries/",
+        "demo" => "https://37676.hosts1.ma-cloud.nl/pokemon/",
         "image" => "project1.jpg"
     ],
     [
         "title" => "React Dashboard",
-        "description" => "Interactief dashboard voor data-analyse met real-time grafieken en filters. Responsive design voor alle apparaten.",
+        "description" => "",
         "technologies" => ["React", "Chart.js", "Node.js", "Express"],
         "github" => "https://github.com/reikdevries/dashboard",
         "demo" => "https://37676.hosts1.ma-cloud.nl/M5BO/",
         "image" => "project2.jpg"
     ],
     [
-        "title" => "Portfolio CMS",
-        "description" => "Content Management System speciaal voor portfolio websites. Eenvoudig beheer van projecten en content via admin panel.",
+        "title" => "",
+        "description" => "",
         "technologies" => ["PHP", "MySQL", "Bootstrap", "jQuery"],
         "github" => "https://github.com/reikdevries/portfolio-cms",
         "demo" => "https://cms.reikdevries.nl",
@@ -42,7 +42,7 @@ $projects = [
     ],
     [
         "title" => "Weather App",
-        "description" => "Weer-applicatie met geolocation ondersteuning en 7-daagse voorspelling. Gebruikt externe weather API voor actuele data.",
+        "description" => "",
         "technologies" => ["JavaScript", "API", "CSS3", "HTML5"],
         "github" => "https://github.com/reikdevries/weather-app",
         "demo" => "https://weather.reikdevries.nl",
@@ -53,13 +53,13 @@ $projects = [
 // Experience data
 $experience = [
     [
-        "position" => "Junior Web Developer",
+        "position" => "",
         "company" => "TechStart BV",
         "period" => "2023 - Heden",
         "description" => "Ontwikkeling van webapplicaties met PHP en JavaScript. Samenwerking in Agile teams."
     ],
     [
-        "position" => "Frontend Developer (Stage)",
+        "position" => " (Stage)",
         "company" => "Digital Agency",
         "period" => "2022 - 2023",
         "description" => "Specialisatie in responsive webdesign en gebruikerservaring. Werken met moderne frameworks."
