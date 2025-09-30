@@ -9,8 +9,8 @@ $linkedin = "https://linkedin.com/in/reikdevries";
 
 // Skills data
 $skills = [
-    "Frontend" => ["HTML5", "CSS3", "JavaScript", "React", "Vue.js", "Tailwind CSS"],
-    "Backend" => ["PHP", "Node.js", "Python", "MySQL", "PostgreSQL", "MongoDB"],
+    "Frontend" => ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
+    "Backend" => ["PHP", "Node.js", "Python", "MySQL"],
     "Tools" => ["Git", "Docker", "VS Code", "Photoshop"]
 ];
 
@@ -22,10 +22,10 @@ $projects = [
         "technologies" => ["JavaScript", "CSS"],
         "github" => "https://github.com/reikdevries/",
         "demo" => "https://37676.hosts1.ma-cloud.nl/pokemon/",
-        "image" => "project1.jpg"
+        "image" => "img/pokemon.png"
     ],
     [
-        "title" => "React Dashboard",
+        "title" => "",
         "description" => "Dynamisch dashboard met real-time data visualisatie",
         "technologies" => ["React", "Chart.js", "Node.js", "Express"],
         "github" => "https://github.com/reikdevries/dashboard",
@@ -33,7 +33,7 @@ $projects = [
         "image" => "project2.jpg"
     ],
     [
-        "title" => "Portfolio CMS",
+        "title" => "",
         "description" => "Content Management Systeem voor portfolio beheer",
         "technologies" => ["PHP", "MySQL", "Bootstrap", "jQuery"],
         "github" => "https://github.com/reikdevries/portfolio-cms",
@@ -41,7 +41,7 @@ $projects = [
         "image" => "project3.jpg"
     ],
     [
-        "title" => "Weather App",
+        "title" => "",
         "description" => "Real-time weer applicatie met API integratie",
         "technologies" => ["JavaScript", "API", "CSS3", "HTML5"],
         "github" => "https://github.com/reikdevries/weather-app",
@@ -53,14 +53,14 @@ $projects = [
 // Experience data
 $experience = [
     [
-        "position" => "Full-Stack Developer",
-        "company" => "TechStart BV",
-        "period" => "2023 - Heden",
-        "description" => "Ontwikkeling van webapplicaties met PHP en JavaScript. Samenwerking in Agile teams."
+        "position" => "ICT Support",
+        "company" => "PC Rider",
+        "period" => "2021 - 2022",
+        "description" => ""
     ],
     [
-        "position" => "Frontend Developer (Stage)",
-        "company" => "Digital Agency",
+        "position" => "",
+        "company" => "",
         "period" => "2022 - 2023",
         "description" => "Specialisatie in responsive webdesign en gebruikerservaring. Werken met moderne frameworks."
     ]
@@ -126,7 +126,7 @@ $experience = [
                 <?php foreach ($projects as $index => $project): ?>
                     <div class="project-card fade-in">
                         <div class="project-image">
-                            <i class="fas <?= ['fa-gamepad', 'fa-chart-line', 'fa-cogs', 'fa-cloud-sun'][$index] ?>"></i>
+                            <img src="<?= $project['image']?>" alt="project image">
                         </div>
                         <div class="project-content">
                             <h3 class="project-title"><?= $project['title'] ?></h3>
