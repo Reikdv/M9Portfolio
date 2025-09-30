@@ -87,9 +87,9 @@ $experience = [
             <div class="nav-container">
                 <a href="#home" class="logo"><?= explode(' ', $name)[0] ?></a>
                 <ul class="nav-links">
-                    <li><a href="#about">Over mij</a></li>
-                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projecten</a></li>
+                    <li><a href="aboutme.php">Over mij</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#experience">Ervaring</a></li>
                     <li><a href="#contact" class="btn">Contact</a></li>
                 </ul>
@@ -102,6 +102,9 @@ $experience = [
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="hero-background.gif" alt="Background Animation" class="hero-gif">
+        </div>
         <div class="container">
             <div class="hero-content">
                 <h1>Hallo, ik ben <?= $name ?></h1>
@@ -110,46 +113,6 @@ $experience = [
                     <a href="#projects" class="btn">Bekijk mijn werk</a>
                     <a href="#contact" class="btn btn-outline">Contact opnemen</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title fade-in">Over mij</h2>
-            <div class="about-content fade-in">
-                <div class="about-image">
-                    <div style="width: 300px; height: 300px; background: var(--gradient); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
-                        <i class="fas fa-user" style="font-size: 4rem; color: white; opacity: 0.8;"></i>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <p>Als gepassioneerde web developer ben ik gespecialiseerd in het bouwen van moderne, gebruiksvriendelijke websites en applicaties. Met een sterke focus op zowel frontend als backend ontwikkeling, creëer ik complete digitale oplossingen.</p>
-                    
-                    <p>Mijn ervaring omvat het werken met moderne frameworks en technologieën, waarbij ik altijd streef naar clean code, optimale gebruikerservaring en responsive design. Ik ben continu bezig met het bijhouden van de nieuwste trends en technieken in webontwikkeling.</p>
-                    
-                    <p>Wanneer ik niet aan het programmeren ben, besteed ik graag tijd aan het leren van nieuwe technologieën en het werken aan persoonlijke projecten die mijn vaardigheden verder ontwikkelen.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title fade-in">Mijn Skills</h2>
-            <div class="skills-grid">
-                <?php foreach ($skills as $category => $skill_list): ?>
-                    <div class="skill-category fade-in">
-                        <h3><?= $category ?></h3>
-                        <div class="skill-tags">
-                            <?php foreach ($skill_list as $skill): ?>
-                                <span class="skill-tag"><?= $skill ?></span>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
             </div>
         </div>
     </section>
@@ -180,6 +143,27 @@ $experience = [
                                     <i class="fas fa-external-link-alt"></i> Demo
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Mijn Skills</h2>
+            <div class="skills-grid">
+                <?php foreach ($skills as $category => $skill_list): ?>
+                    <div class="skill-category fade-in">
+                        <h3><?= $category ?></h3>
+                        <div class="skill-tags">
+                            <?php foreach ($skill_list as $skill): ?>
+                                <span class="skill-tag"><?= $skill ?></span>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 <?php endforeach; ?>
