@@ -4,8 +4,8 @@ $site_title = "Reik de Vries - Portfolio";
 $name = "Reik de Vries";
 $job_title = "Full-Stack Web Developer";
 $email = "Reikdv@gmail.com";
-$github = "https://github.com/reikdevries";
-$linkedin = "https://linkedin.com/in/reikdevries";
+$github = "https://github.com/Reikdv";
+$linkedin = "https://www.linkedin.com/in/reik-de-vries-759a93387/";
 
 // Skills data
 $skills = [

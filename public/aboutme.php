@@ -8,7 +8,7 @@ $github = "https://github.com/reikdevries";
 $linkedin = "https://linkedin.com/in/reikdevries";
 
 // About info
-$about_intro = "Als gepassioneerde web developer ben ik gespecialiseerd in het bouwen van moderne, gebruiksvriendelijke websites en applicaties. Met een sterke focus op zowel frontend als backend ontwikkeling, creëer ik complete digitale oplossingen.";
+$about_intro = "Als gepassioneerde web developer ben ik gespecialiseerd in het bouwen van moderne, gebruiksvriendelijke websites en applicaties.";
 
 $about_details = [
     "Mijn ervaring omvat het werken met moderne frameworks en technologieën, waarbij ik altijd streef naar clean code, optimale gebruikerservaring en responsive design.",
@@ -18,8 +18,8 @@ $about_details = [
 
 // Skills
 $skills = [
-    "Frontend" => ["HTML5", "CSS3", "JavaScript", "React", "Vue.js", "Tailwind CSS"],
-    "Backend" => ["PHP", "Node.js", "Python", "MySQL", "PostgreSQL", "MongoDB"],
+    "Frontend" => ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
+    "Backend" => ["PHP", "Node.js", "Python", "MySQL"],
     "Tools" => ["Git", "Docker", "VS Code", "Photoshop"]
 ];
 
@@ -28,7 +28,7 @@ $interests = [
     ["icon" => "fa-code", "title" => "Programmeren", "desc" => "Nieuwe technologieën leren"],
     ["icon" => "fa-palette", "title" => "Design", "desc" => "UI/UX & Visual Design"],
     ["icon" => "fa-gamepad", "title" => "Gaming", "desc" => "Strategie & Indie games"],
-    ["icon" => "fa-book", "title" => "Lezen", "desc" => "Tech & Business boeken"]
+    ["icon" => "fa-book", "title" => "Lezen", "desc" => "filosofie & fictie boeken"]
 ];
 ?>
 <!DOCTYPE html>
