@@ -18,7 +18,7 @@ $skills = [
 $projects = [
     [
         "title" => "Pokemon",
-        "description" => "",
+        "description" => "Een interactieve Pokemon applicatie met moderne JavaScript",
         "technologies" => ["JavaScript", "CSS"],
         "github" => "https://github.com/reikdevries/",
         "demo" => "https://37676.hosts1.ma-cloud.nl/pokemon/",
@@ -26,15 +26,15 @@ $projects = [
     ],
     [
         "title" => "React Dashboard",
-        "description" => "",
+        "description" => "Dynamisch dashboard met real-time data visualisatie",
         "technologies" => ["React", "Chart.js", "Node.js", "Express"],
         "github" => "https://github.com/reikdevries/dashboard",
         "demo" => "https://37676.hosts1.ma-cloud.nl/M5BO/",
         "image" => "project2.jpg"
     ],
     [
-        "title" => "",
-        "description" => "",
+        "title" => "Portfolio CMS",
+        "description" => "Content Management Systeem voor portfolio beheer",
         "technologies" => ["PHP", "MySQL", "Bootstrap", "jQuery"],
         "github" => "https://github.com/reikdevries/portfolio-cms",
         "demo" => "https://cms.reikdevries.nl",
@@ -42,7 +42,7 @@ $projects = [
     ],
     [
         "title" => "Weather App",
-        "description" => "",
+        "description" => "Real-time weer applicatie met API integratie",
         "technologies" => ["JavaScript", "API", "CSS3", "HTML5"],
         "github" => "https://github.com/reikdevries/weather-app",
         "demo" => "https://weather.reikdevries.nl",
@@ -53,13 +53,13 @@ $projects = [
 // Experience data
 $experience = [
     [
-        "position" => "",
+        "position" => "Full-Stack Developer",
         "company" => "TechStart BV",
         "period" => "2023 - Heden",
         "description" => "Ontwikkeling van webapplicaties met PHP en JavaScript. Samenwerking in Agile teams."
     ],
     [
-        "position" => " (Stage)",
+        "position" => "Frontend Developer (Stage)",
         "company" => "Digital Agency",
         "period" => "2022 - 2023",
         "description" => "Specialisatie in responsive webdesign en gebruikerservaring. Werken met moderne frameworks."
@@ -76,7 +76,7 @@ $experience = [
     <meta name="description" content="Portfolio van <?= $name ?> - <?= $job_title ?>. Bekijk mijn projecten en ervaring in webontwikkeling.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -103,7 +103,8 @@ $experience = [
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-background">
-            <img src="hero-background.gif" alt="Background Animation" class="hero-gif">
+            <img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" alt="" class="hero-gif">
+            <div class="hero-overlay"></div>
         </div>
         <div class="container">
             <div class="hero-content">
@@ -125,7 +126,7 @@ $experience = [
                 <?php foreach ($projects as $index => $project): ?>
                     <div class="project-card fade-in">
                         <div class="project-image">
-                            <i class="fas <?= ['fa-shopping-cart', 'fa-chart-line', 'fa-cogs', 'fa-cloud-sun'][$index] ?>"></i>
+                            <i class="fas <?= ['fa-gamepad', 'fa-chart-line', 'fa-cogs', 'fa-cloud-sun'][$index] ?>"></i>
                         </div>
                         <div class="project-content">
                             <h3 class="project-title"><?= $project['title'] ?></h3>
@@ -149,8 +150,6 @@ $experience = [
             </div>
         </div>
     </section>
-
-   
 
     <!-- Skills Section -->
     <section id="skills" class="section">
@@ -246,6 +245,7 @@ $experience = [
                         behavior: 'smooth',
                         block: 'start'
                     });
+                    navLinks.classList.remove('active');
                 }
             });
         });
