@@ -1,5 +1,5 @@
 <?php
-// Configuratie
+
 $site_title = "Reik de Vries - Portfolio";
 $name = "Reik de Vries";
 $job_title = "Full-Stack Web Developer";
@@ -7,62 +7,58 @@ $email = "Reikdv@gmail.com";
 $github = "https://github.com/Reikdv";
 $linkedin = "https://www.linkedin.com/in/reik-de-vries-759a93387/";
 
-// Skills data
+
 $skills = [
     "Frontend" => ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
     "Backend" => ["PHP", "Node.js", "Python", "MySQL"],
     "Tools" => ["Git", "Docker", "VS Code", "Photoshop"]
 ];
 
-// Projects data
+
 $projects = [
     [
         "title" => "Pokemon",
         "description" => "Een interactieve Pokemon applicatie met moderne JavaScript",
         "technologies" => ["JavaScript", "CSS"],
-        "github" => "https://github.com/reikdevries/",
         "demo" => "https://37676.hosts1.ma-cloud.nl/pokemon/",
         "image" => "img/pokemon.png"
     ],
     [
-        "title" => "",
-        "description" => "Dynamisch dashboard met real-time data visualisatie",
-        "technologies" => ["React", "Chart.js", "Node.js", "Express"],
-        "github" => "https://github.com/reikdevries/dashboard",
-        "demo" => "https://37676.hosts1.ma-cloud.nl/M5BO/",
-        "image" => "project2.jpg"
+        "title" => "Social Media",
+        "description" => "Facebook/Reddit stijl dashboard applicatie",
+        "technologies" => ["Javascript", "HTML", "CSS", "API"],
+        "demo" => "https://37676.hosts1.ma-cloud.nl/m7Socialmedia/",
+        "image" => "img/socialmedia.png"
     ],
     [
-        "title" => "",
+        "title" => "Stopwatch",
         "description" => "Content Management Systeem voor portfolio beheer",
-        "technologies" => ["PHP", "MySQL", "Bootstrap", "jQuery"],
-        "github" => "https://github.com/reikdevries/portfolio-cms",
-        "demo" => "https://cms.reikdevries.nl",
-        "image" => "project3.jpg"
+        "technologies" => ["JSON", "Javascript", "HTML", "CSS"],
+        "demo" => "https://37676.hosts1.ma-cloud.nl/stopwatch/",
+        "image" => "img/stopwatch.png"
     ],
     [
-        "title" => "",
-        "description" => "Real-time weer applicatie met API integratie",
-        "technologies" => ["JavaScript", "API", "CSS3", "HTML5"],
-        "github" => "https://github.com/reikdevries/weather-app",
-        "demo" => "https://weather.reikdevries.nl",
-        "image" => "project4.jpg"
+        "title" => "Webshop",
+        "description" => "Webshop",
+        "technologies" => ["JavaScript", "CSS", "HTML"],
+        "demo" => "https://37676.hosts1.ma-cloud.nl/Webshop/#producten",
+        "image" => "img/webshop.png"
     ]
 ];
 
-// Experience data
+
 $experience = [
     [
-        "position" => "ICT Support",
-        "company" => "PC Rider",
-        "period" => "2021 - 2022",
+        "position" => "ICT Support (stage)",
+        "company" => "OBS de Punt",
+        "period" => "2022 - 2023",
         "description" => ""
     ],
     [
-        "position" => "",
-        "company" => "",
-        "period" => "2022 - 2023",
-        "description" => "Specialisatie in responsive webdesign en gebruikerservaring. Werken met moderne frameworks."
+        "position" => "ICT Support (stage)",
+        "company" => "PC Rider",
+        "period" => "2021 - 2022",
+        "description" => ""
     ]
 ];
 ?>
@@ -81,7 +77,7 @@ $experience = [
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+    
     <nav class="navbar">
         <div class="container">
             <div class="nav-container">
@@ -91,7 +87,7 @@ $experience = [
                     <li><a href="aboutme.php">Over mij</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#experience">Ervaring</a></li>
-                    <li><a href="#contact" class="btn">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <button class="mobile-nav-toggle">
                     <i class="fas fa-bars"></i>
@@ -100,7 +96,7 @@ $experience = [
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    
     <section id="home" class="hero">
         <div class="hero-background">
             <img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" alt="" class="hero-gif">
@@ -118,7 +114,7 @@ $experience = [
         </div>
     </section>
 
-    <!-- Projects Section -->
+    
     <section id="projects" class="section projects">
         <div class="container">
             <h2 class="section-title fade-in">Mijn Projecten</h2>
@@ -137,8 +133,8 @@ $experience = [
                                 <?php endforeach; ?>
                             </div>
                             <div class="project-links">
-                                <a href="<?= $project['github'] ?>" class="project-link" target="_blank">
-                                    <i class="fab fa-github"></i> GitHub
+                                
+                                    
                                 </a>
                                 <a href="<?= $project['demo'] ?>" class="project-link" target="_blank">
                                     <i class="fas fa-external-link-alt"></i> Demo
@@ -151,7 +147,7 @@ $experience = [
         </div>
     </section>
 
-    <!-- Skills Section -->
+    
     <section id="skills" class="section">
         <div class="container">
             <h2 class="section-title fade-in">Mijn Skills</h2>
@@ -170,7 +166,7 @@ $experience = [
         </div>
     </section>
 
-    <!-- Experience Section -->
+    
     <section id="experience" class="section">
         <div class="container">
             <h2 class="section-title fade-in">Werkervaring</h2>
@@ -190,7 +186,7 @@ $experience = [
         </div>
     </section>
 
-    <!-- Contact Section -->
+    
     <section id="contact" class="section contact">
         <div class="container">
             <div class="contact-content">
@@ -212,14 +208,13 @@ $experience = [
                     </a>
                 </div>
 
-                <a href="cv.pdf" class="btn fade-in" download>
-                    <i class="fas fa-download"></i> Download CV
+              
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    
     <footer class="footer">
         <div class="container">
             <p>&copy; <?= date('Y') ?> <?= $name ?>. Alle rechten voorbehouden.</p>
@@ -227,7 +222,7 @@ $experience = [
     </footer>
 
     <script>
-        // Mobile Navigation
+        
         const mobileToggle = document.querySelector('.mobile-nav-toggle');
         const navLinks = document.querySelector('.nav-links');
 
@@ -235,7 +230,7 @@ $experience = [
             navLinks.classList.toggle('active');
         });
 
-        // Smooth scrolling
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -250,7 +245,7 @@ $experience = [
             });
         });
 
-        // Scroll animations
+        
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -268,7 +263,7 @@ $experience = [
             observer.observe(el);
         });
 
-        // Navbar scroll effect
+        
         let lastScrollTop = 0;
         const navbar = document.querySelector('.navbar');
 

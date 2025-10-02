@@ -1,29 +1,21 @@
 <?php
-// Configuratie
+
 $site_title = "Over Mij - Reik de Vries";
 $name = "Reik de Vries";
 $job_title = "Full-Stack Web Developer";
 $email = "Reikdv@gmail.com";
-$github = "https://github.com/reikdevries";
-$linkedin = "https://linkedin.com/in/reikdevries";
+$github = "https://github.com/reikdv";
+$linkedin = "https://www.linkedin.com/in/reik-de-vries-759a93387/";
 
-// About info
-$about_intro = "Als gepassioneerde web developer ben ik gespecialiseerd in het bouwen van moderne, gebruiksvriendelijke websites en applicaties.";
+
+$about_intro = "Mijn naam is Reik de Vries. Ik ben een creatieve software developer.";
 
 $about_details = [
-    "Mijn ervaring omvat het werken met moderne frameworks en technologieën, waarbij ik altijd streef naar clean code, optimale gebruikerservaring en responsive design.",
-    "Ik ben continu bezig met het bijhouden van de nieuwste trends en technieken in webontwikkeling.",
-    "Wanneer ik niet aan het programmeren ben, besteed ik graag tijd aan het leren van nieuwe technologieën en het werken aan persoonlijke projecten die mijn vaardigheden verder ontwikkelen."
+    "Ik ben een enthousiaste software developer en volg momenteel mijn opleiding aan het Media College Amsterdam, waar ik in het derde jaar zit. Ik heb ervaring met verschillende programmeertalen, waaronder HTML, CSS, JavaScript, PHP, Laravel, React, en Bootstrap en blijf mijn kennis continu uitbreiden.",
+    "Ik ben ook bezig met het bijhouden van de nieuwste trends en technieken in webontwikkeling.",
 ];
 
-// Skills
-$skills = [
-    "Frontend" => ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
-    "Backend" => ["PHP", "Node.js", "Python", "MySQL"],
-    "Tools" => ["Git", "Docker", "VS Code", "Photoshop"]
-];
 
-// Interesses
 $interests = [
     ["icon" => "fa-code", "title" => "Programmeren", "desc" => "Nieuwe technologieën leren"],
     ["icon" => "fa-palette", "title" => "Design", "desc" => "UI/UX & Visual Design"],
@@ -83,24 +75,6 @@ $interests = [
                         <p><?= $detail ?></p>
                     <?php endforeach; ?>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section skills-section">
-        <div class="container">
-            <h2 class="section-title fade-in">Technische Skills</h2>
-            <div class="skills-grid">
-                <?php foreach ($skills as $category => $skill_list): ?>
-                    <div class="skill-category fade-in">
-                        <h3><?= $category ?></h3>
-                        <div class="skill-tags">
-                            <?php foreach ($skill_list as $skill): ?>
-                                <span class="skill-tag"><?= $skill ?></span>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
             </div>
         </div>
     </section>
