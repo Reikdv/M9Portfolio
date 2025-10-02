@@ -18,28 +18,30 @@ $skills = [
 $projects = [
     [
         "title" => "Pokemon",
-        "description" => "Een interactieve Pokemon applicatie met moderne JavaScript",
-        "technologies" => ["JavaScript", "CSS"],
+        "description" => "Je kunt zoeken naar Pokemon/gebruiker via naam + landcode.
+      Je kunt wilde Pokemon tegenkomen en kiezen om ze te vangen of door te gaan naar een nieuwe.
+       De gevangen Pokemon-informatie wordt daarna rechts weergegeven.",
+        "technologies" => ["JavaScript", "CSS", "HTML", "API"],
         "demo" => "https://37676.hosts1.ma-cloud.nl/pokemon/",
         "image" => "img/pokemon.png"
     ],
     [
         "title" => "Social Media",
-        "description" => "Facebook/Reddit stijl dashboard applicatie",
+        "description" => "Facebook/Reddit stijl dashboard applicatie Het ziet eruit als een echte feed,Je kan onbeperkt posts bekijken, Maar er is geen echte functionaliteit zoals vrienden volgen, berichten plaatsen of reageren.",
         "technologies" => ["Javascript", "HTML", "CSS", "API"],
         "demo" => "https://37676.hosts1.ma-cloud.nl/m7Socialmedia/",
         "image" => "img/socialmedia.png"
     ],
     [
         "title" => "Stopwatch",
-        "description" => "Content Management Systeem voor portfolio beheer",
+        "description" => "Stopwatch applicatie met een slider om de tekstgrootte aan te passen. Een afbeelding met beschrijving die reageert op de tekstinstelling. Een stopwatch die je kan starten, stoppen en resetten.",
         "technologies" => ["JSON", "Javascript", "HTML", "CSS"],
         "demo" => "https://37676.hosts1.ma-cloud.nl/stopwatch/",
         "image" => "img/stopwatch.png"
     ],
     [
         "title" => "Webshop",
-        "description" => "Webshop",
+        "description" => "Dit is een schoolproject waarin ik een webshop heb nagebouwd voor aromatherapieproducten. De producten en prijzen zijn nep en je kunt hier niets echt kopen. Het doel van dit project is om te oefenen met webdesign, lay-out en het bouwen van een gebruiksvriendelijke webshopomgeving.",
         "technologies" => ["JavaScript", "CSS", "HTML"],
         "demo" => "https://37676.hosts1.ma-cloud.nl/Webshop/#producten",
         "image" => "img/webshop.png"
